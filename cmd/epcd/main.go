@@ -22,9 +22,12 @@ import (
 	"github.com/coreswitch/component"
 	"github.com/coreswitch/epcd/pkg/pgw"
 	"github.com/coreswitch/epcd/pkg/sgw"
+	"github.com/coreswitch/log"
 )
 
 func main() {
+	log.Info("epcd started")
+
 	pgwComponent := &pgw.Component{}
 	sgwComponent := &sgw.Component{}
 
@@ -47,4 +50,5 @@ func main() {
 	}()
 
 	<-done
+	log.Info("epcd stopped")
 }
