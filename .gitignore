@@ -13,9 +13,6 @@
 *.dylib
 *.dll
 
-# Fortran module files
-*.mod
-
 # Compiled Static libraries
 *.lai
 *.la
@@ -39,4 +36,4 @@
 .idea/
 
 # Binary
-./epcd
+epcd
